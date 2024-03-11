@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+.CaruselBg{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.CaruselBtnBG{
+    height: 100%;
+    width: 5%;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    transition: 0.3s all;
+}
+.CaruselBtnBG:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    color: black;
+    transition: 0.3s all;
+}
+
+
+.CaruselContents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.CaruselContentOwn{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.CaruselContent{
+    transition: 0.5s all;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-wrap: nowrap;
+}
+
+
+.CaruselContentNotOwn{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
